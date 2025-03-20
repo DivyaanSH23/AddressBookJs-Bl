@@ -12,13 +12,20 @@ const duplicateContact = new Contact("Shivaji", "Sangha", "789 Andheri", "Mumbai
 myAddressBook.addContact(contact1);
 myAddressBook.addContact(contact2);
 myAddressBook.addContact(dupl);
-myAddressBook.addContact(duplicateContact); // This should be rejected
+myAddressBook.addContact(duplicateContact);
 
-console.log("\nBefore Sorting:");
+console.log("Before Sorting:");
 myAddressBook.displayContacts();
 
-// Sort Contacts Alphabetically
-myAddressBook.sortContactsByName();
+// Sorting contacts by City, State, and Zip
+console.log("\nSorted by City:");
+myAddressBook.sortByCity();
+myAddressBook.displayContacts();
 
-console.log("\nAfter Sorting:");
+console.log("\nSorted by State:");
+myAddressBook.sortByState();
+myAddressBook.displayContacts();
+
+console.log("\nSorted by Zip:");
+myAddressBook.sortByZip();
 myAddressBook.displayContacts();
