@@ -1,3 +1,5 @@
+
+
 const Contact = require("./ScriptJS/Contact");
 const AddressBook = require("./ScriptJS/AddressBook");
 const myAddressBook = new AddressBook();
@@ -12,10 +14,11 @@ myAddressBook.addContact(contact1);
 myAddressBook.addContact(contact2);
 myAddressBook.addContact(dupl);
 myAddressBook.addContact(duplicateContact); // This should be rejected
+
 myAddressBook.displayContacts();
 
-// View persons by City
-myAddressBook.viewPersonsByCity("Delhi");
+// Count persons by City
+myAddressBook.countPersonsByCity("Delhi");
 
-// View persons by State
-myAddressBook.viewPersonsByState("Maharashtra");
+// Count persons by State
+myAddressBook.countPersonsByState("Maharashtra");
