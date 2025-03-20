@@ -12,11 +12,10 @@ myAddressBook.addContact(contact1);
 myAddressBook.addContact(contact2);
 myAddressBook.addContact(dupl);
 myAddressBook.addContact(duplicateContact); // This should be rejected
-
 myAddressBook.displayContacts();
 
-// Search for contacts in Delhi
-myAddressBook.searchByCity("Delhi");
+// View persons by City
+myAddressBook.viewPersonsByCity("Delhi");
 
-// Search for contacts in Maharashtra
-myAddressBook.searchByState("Maharashtra");
+// View persons by State
+myAddressBook.viewPersonsByState("Maharashtra");
