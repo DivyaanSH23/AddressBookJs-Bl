@@ -1,6 +1,5 @@
 const Contact = require("./ScriptJS/Contact");
 const AddressBook = require("./ScriptJS/AddressBook");
-
 const myAddressBook = new AddressBook();
 
 const contact1 = new Contact("Divyansh", "Shukla", "123 MG Road", "Delhi", "Delhi", "110001", "9876543210", "div@example.com");
@@ -15,4 +14,9 @@ myAddressBook.addContact(dupl);
 myAddressBook.addContact(duplicateContact); // This should be rejected
 
 myAddressBook.displayContacts();
-myAddressBook.countContacts();
+
+// Search for contacts in Delhi
+myAddressBook.searchByCity("Delhi");
+
+// Search for contacts in Maharashtra
+myAddressBook.searchByState("Maharashtra");
